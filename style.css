@@ -1,164 +1,244 @@
+/* Reset and Base Styles */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif; /* Improved font */
 }
 
+/* Layout Components */
 .container {
-    width: 90%;
-    max-width: 1200px; /* Increased max-width for sidebar */
     margin: auto;
     padding: 20px;
-}
-
-header {
-    background: #000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 15px 0;
-    margin-bottom: 20px;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    height: 50px; /* Adjust the size of the logo */
-    margin-right: 10px; /* Space between logo and text */
-}
-
-.logo {
-    color: white;
-    font-size: 1.8rem; /* Larger font size */
-    font-family: 'Montserrat', sans-serif; /* Improved font */
-    font-weight: 700; /* Bold font */
-    margin: 0; /* Remove default margin */
-}
-
-.navbar-links {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-links a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif; /* Improved font */
-    font-weight: 500; /* Medium font weight */
-}
-
-.navbar-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 5px;
-}
-
-.hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-.ad-banner {
-    background-color: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8em;
-}
-
-.top-ad {
-    height: 90px; /* Top banner ad height */
-    margin: 15px 0;
-}
-
-.side-ad {
-    height: 250px; /* Sidebar ad height */
-    width: 100%; /* Full width for sidebar ads on smaller screens */
-    margin-bottom: 20px; /* Space between sidebar ads */
+    width: 90%;
+    max-width: 1200px;
 }
 
 .content-wrapper {
     display: flex;
-    gap: 20px; /* Space between main content and sidebar */
+    gap: 20px;
 }
 
+/* Header Styles */
+header {
+    background: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 15px 0;
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo Styles */
+.logo-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo-image {
+    height: 50px;
+    margin-right: 10px;
+    min-width: 50px;
+}
+
+.logo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Navigation Links */
+.navbar-links {
+    align-items: center;
+    display: flex;
+}
+
+.navbar-links a {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.hamburger {
+    background-color: #fff;
+    height: 3px;
+    margin: 4px 0;
+    transition: 0.4s;
+    width: 25px;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: #ffa500;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Ad Space Styles */
+.ad-banner {
+    background-color: #e0e0e0;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-ad {
+    height: 90px;
+    margin: 15px 0;
+}
+
+.side-ad {
+    height: 250px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Blog Post Styles */
 .blog-post {
     background: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
     padding: 20px;
-    flex: 1; /* Take remaining space */
-}
-
-.blog-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    margin-bottom: 20px;
 }
 
 .blog-post-header {
     margin-bottom: 20px;
 }
 
-.blog-post-header h1 {
-    margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif; /* Improved font */
-    font-size: 2rem; /* Larger font size */
-    font-weight: 700; /* Bold font */
+.attractive-header {
+    background: none;
+    color: #1D3557;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .blog-post-meta {
     color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif; /* Improved font */
-    font-size: 0.9rem; /* Smaller font size */
 }
 
 .blog-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
     line-height: 1.8;
-    font-family: 'Roboto', sans-serif; /* Improved font */
-    font-size: 1rem; /* Standard font size */
 }
 
-/* Add padding to <li> elements inside .blog-content */
+/* Video Container Styles */
+.video-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+}
+
+.video-container iframe {
+    border: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* Typography Styles */
+.blog-content h2 {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 30px 0 20px;
+}
+
+.blog-content ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
 .blog-content ol li {
-    padding: 20px 0 0 0 ; /* Adds 10px padding to the top and bottom of each <li> */
-    margin-left: 20px; /* Adds indentation to the list items */
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-left: 20px;
+    padding: 20px 0 0 0;
 }
 
+.blog-content code {
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    color: #d63384;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    padding: 2px 6px;
+}
+
+/* Sidebar Styles */
 .sidebar {
-    width: 300px; /* Fixed width for sidebar on larger screens */
+    width: 300px;
 }
 
+/* Logo and Icon Styles */
+.inline-logo {
+    height: 45px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.plus-sign {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+/* Footer Styles */
 footer {
-    text-align: center;
-    padding: 20px;
     background: #000;
-    margin-top: 20px;
     color: #fff;
-    font-family: 'Roboto', sans-serif; /* Improved font */
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Responsive Styles */
@@ -167,27 +247,33 @@ footer {
         width: 95%;
     }
 
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    .logo-image {
+        height: 40px;
+        margin-right: 8px;
+        min-width: 40px;
+    }
+
     .content-wrapper {
-        flex-direction: column; /* Stack content and sidebar on smaller screens */
+        flex-direction: column;
     }
 
     .sidebar {
-        width: 100%; /* Full width for sidebar on smaller screens */
-    }
-
-    .side-ad {
-        width: 100%; /* Full width for sidebar ads on smaller screens */
+        width: 100%;
     }
 
     .navbar-links {
+        background: #000;
         display: none;
         flex-direction: column;
-        width: 100%;
-        background: #000;
-        position: absolute;
-        top: 80px; /* Adjusted to accommodate the logo and banner */
         left: 0;
-        padding: 20px 0; /* Add padding to push the links down */
+        padding: 20px 0;
+        position: absolute;
+        top: 80px;
+        width: 100%;
     }
 
     .navbar-links.active {
@@ -202,102 +288,24 @@ footer {
     .navbar-toggle {
         display: flex;
     }
+
+    .attractive-header {
+        font-size: 2rem;
+    }
 }
 
-.banner {
-    background-color: #ffa500;
-    color: #000;
-    padding: 10px 0;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif; /* Improved font */
-}
+@media (max-width: 360px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .logo-image {
+        height: 35px;
+        margin-right: 6px;
+        min-width: 35px;
+    }
 
-/* Add this to your style.css file */
-
-/* Video Intro Text */
-.video-intro {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    color: #333;
-    text-align: center;
-}
-
-/* Video Container */
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    margin: 20px 0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* Step-by-Step Guide Heading */
-.blog-content h2 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #000;
-}
-
-/* Ordered List Styling */
-.blog-content ol {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.blog-content ol li {
-    padding: 10px 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Code Styling */
-.blog-content code {
-    background-color: #f4f4f4;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem;
-    color: #d63384;
-}
-
-.inline-logo {
-    height: 45px; /* Adjust to match text height */
-    vertical-align: middle; /* Align with the text baseline */
-    margin: 0 5px; /* Add spacing between text and logos */
-}
-
-.plus-sign {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0 5px; /* Adjust space around the plus sign */
-    color: #000; /* Change color if needed */
-    vertical-align: middle; /* Align with logos */
-}
-
-.attractive-header {
-    font-family: 'Montserrat', sans-serif; /* Clean, professional font */
-    font-size: 2.5rem; /* Eye-catching size */
-    color: #1D3557; /* Sophisticated dark blue */
-    text-align: center; /* Center the text */
-    line-height: 1.4; /* Improve readability */
-    font-weight: 700; /* Make it bold and impactful */
-    background: none; /* Remove gradient */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    margin: 20px 0; /* Add spacing around the text */
+    .attractive-header {
+        font-size: 1.8rem;
+    }
 }
