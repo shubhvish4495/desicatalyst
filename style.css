@@ -142,6 +142,12 @@ header {
     font-size: 1rem; /* Standard font size */
 }
 
+/* Add padding to <li> elements inside .blog-content */
+.blog-content ol li {
+    padding: 20px 0 0 0 ; /* Adds 10px padding to the top and bottom of each <li> */
+    margin-left: 20px; /* Adds indentation to the list items */
+}
+
 .sidebar {
     width: 300px; /* Fixed width for sidebar on larger screens */
 }
@@ -205,4 +211,93 @@ footer {
     text-align: center;
     font-weight: bold;
     font-family: 'Roboto', sans-serif; /* Improved font */
+}
+
+/* Add this to your style.css file */
+
+/* Video Intro Text */
+.video-intro {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Step-by-Step Guide Heading */
+.blog-content h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Ordered List Styling */
+.blog-content ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-content ol li {
+    padding: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Code Styling */
+.blog-content code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #d63384;
+}
+
+.inline-logo {
+    height: 45px; /* Adjust to match text height */
+    vertical-align: middle; /* Align with the text baseline */
+    margin: 0 5px; /* Add spacing between text and logos */
+}
+
+.plus-sign {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 5px; /* Adjust space around the plus sign */
+    color: #000; /* Change color if needed */
+    vertical-align: middle; /* Align with logos */
+}
+
+.attractive-header {
+    font-family: 'Montserrat', sans-serif; /* Clean, professional font */
+    font-size: 2.5rem; /* Eye-catching size */
+    color: #1D3557; /* Sophisticated dark blue */
+    text-align: center; /* Center the text */
+    line-height: 1.4; /* Improve readability */
+    font-weight: 700; /* Make it bold and impactful */
+    background: none; /* Remove gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 20px 0; /* Add spacing around the text */
 }
