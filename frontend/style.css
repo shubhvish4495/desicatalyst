@@ -257,6 +257,13 @@ header {
     margin-left: 10px;
 }
 
+.signup-section .error-cross {
+    display: none;
+    color: green;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
 /* Intro Section */
 .intro-section {
     text-align: center;

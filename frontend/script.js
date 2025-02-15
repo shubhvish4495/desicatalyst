@@ -4,27 +4,47 @@ document.querySelector('.navbar-toggle').addEventListener('click', function() {
 });
 
 // Signup form functionality
-document.getElementById('signup-form').addEventListener('submit', function(event) {
+document.getElementById('signup-form').addEventListener('submit', async function(event) {
     event.preventDefault();
+    
     const email = document.getElementById('email').value;
     const submitBtn = document.getElementById('submit-btn');
     const successTick = document.getElementById('success-tick');
+    const errorCross = document.getElementById('error-cross');
+
+    // Hide previous success/error indicators
+    successTick.style.display = 'none';
+    errorCross.style.display = 'none';
 
     // Disable the submit button to prevent multiple submissions
     submitBtn.disabled = true;
 
-    // Simulate an API call (replace with actual API call)
+    
+    
+    try {
+        const response = await fetch(`http://localhost:4444/email_signup?emailId=${encodeURIComponent(email)}`, {
+            method: 'POST'
+        });
+
+        if (response.ok) {
+            successTick.style.display = 'inline-block';
+        } else {
+            errorCross.style.display = 'inline-block';
+        }
+    } catch (error) {
+        // Handle network errors (e.g., server down, connection refused)
+        errorCross.style.display = 'inline-block';
+    }
+
+    // Reset the form after a few seconds
     setTimeout(() => {
-        // Show the success tick
-        successTick.style.display = 'inline-block';
-        // Reset the form after a few seconds
-        setTimeout(() => {
-            document.getElementById('signup-form').reset();
-            submitBtn.disabled = false;
-            successTick.style.display = 'none';
-        }, 3000);
-    }, 1000);
+        document.getElementById('signup-form').reset();
+        submitBtn.disabled = false;
+        successTick.style.display = 'none';
+        errorCross.style.display = 'none';
+    }, 3000);
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.blog-scroll-container');

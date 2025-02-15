@@ -50,6 +50,7 @@
                 <img src="assets/images/logo-nobg.png" alt="Desi Catalyst Logo" class="logo-image">
                 <h1 class="logo">Desi Catalyst</h1>
             </div>
+            <!-- <button id="dark-mode-toggle">🌙</button> -->
             <button class="navbar-toggle" aria-label="Toggle navigation">
                 <span class="hamburger"></span>
             </button>
@@ -63,17 +64,11 @@
         <!-- <div class="banner">New blogs and features coming soon!</div> -->
     </header>
 
-    <section class="intro-section">
-        <div class="intro-content">
-            <h1>Welcome to Desi Catalyst</h1>
-            <p class="intro-text">
-                Unlock your creative potential with AI-powered tools. Learn, create, and stay ahead in the world of content creation.
-            </p>
-            <!-- <a href="#blogs" class="cta-button">Explore AI Tools</a> -->
-        </div>
-    </section>
-
     <div class="container main-content">
+        <div class="intro-content">
+            <h1><p>Latest Blogs</p></h1>
+        </div>
+        
         <div class="content-wrapper">
 
             <!-- Add the blog cards section -->
@@ -99,12 +94,7 @@
                             <img src="assets/images/blog3.png" alt="Blog 3">
                             <h3>Test blog</h3>
                             <p>Step-by-step guide to creating videos using Hailuo.ai.</p>
-                        </div>
-                        <div class="blog-card">
-                            <img src="assets/images/blog3.png" alt="Blog 3">
-                            <h3>Test blog</h3>
-                            <p>Step-by-step guide to creating videos using Hailuo.ai.</p>
-                        </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="blog-navigation">
@@ -114,17 +104,18 @@
             </section>
 
             <!-- Add the "See All" button section -->
-            <section class="see-all-section">
+            <!-- <section class="see-all-section">
                 <button class="see-all-button" onclick="window.location.href='all-blogs.html'">See All Blogs</button>
-            </section>
+            </section> -->
 
             <!-- Add the signup section -->
             <section class="signup-section">
-                <h2>Sign Up for More AI Content Creation Tips</h2>
+                <h2>Sign Up for Latest Blogs</h2>
                 <form id="signup-form">
                     <input type="email" id="email" placeholder="Enter your email" required>
                     <button type="submit" id="submit-btn">Submit</button>
                     <span class="success-tick" id="success-tick">✔</span>
+                    <span class="error-cross" id="error-cross">❌</span>
                 </form>
             </section>
         </div>

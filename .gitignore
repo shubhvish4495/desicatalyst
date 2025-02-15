@@ -1,2 +1,7 @@
 .vscode/
 *.pem
+
+.env
+backend/postgres_data
+
+.idea
