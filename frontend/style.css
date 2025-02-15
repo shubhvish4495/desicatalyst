@@ -413,3 +413,7 @@ footer {
         padding: 0 5px;
     }
 }
+
+a, u {
+    text-decoration: none;
+}
