@@ -60,65 +60,73 @@
                 <a href="#">Contact</a>
             </nav> -->
         </div>
-        <div class="banner">New blogs and features coming soon!</div>
+        <!-- <div class="banner">New blogs and features coming soon!</div> -->
     </header>
 
+    <section class="intro-section">
+        <div class="intro-content">
+            <h1>Welcome to Desi Catalyst</h1>
+            <p class="intro-text">
+                Unlock your creative potential with AI-powered tools. Learn, create, and stay ahead in the world of content creation.
+            </p>
+            <!-- <a href="#blogs" class="cta-button">Explore AI Tools</a> -->
+        </div>
+    </section>
+
     <div class="container main-content">
-        <!-- <div class="ad-banner top-ad">
-            Top Banner Ad (728x90)
-        </div> -->
-
         <div class="content-wrapper">
-            <article class="blog-post">
-                <div class="blog-post-header">
-                    <h1 class="attractive-header">Unleash the Power of AI: Your Ultimate Step-by-Step Guide to Effortless Content Creation
-                        <img src="assets/images/ai_logo.png" alt="AI Logo for Content Creation" class="inline-logo" loading="lazy">
-                    </h1>
-                </div>
 
-                <div class="blog-content">
-                    <!-- YouTube Video Container -->
-                    <div class="video-container">
-                        <iframe width="100%" height="200%" src="https://www.youtube.com/embed/L4-GFRW4gbY?autoplay=1&mute=1" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            <!-- Add the blog cards section -->
+            <section class="blog-section">
+                <div class="blog-scroll-container">
+                    <div class="blog-cards">
+                        <div class="blog-card">
+                            <img src="assets/images/blog1.png" alt="Blog 1">
+                            <h3>How to Use ChatGPT for Content Creation</h3>
+                            <p>Learn how to leverage ChatGPT to create engaging content effortlessly.</p>
+                        </div>
+                        <div class="blog-card">
+                            <img src="assets/images/blog2.png" alt="Blog 2">
+                            <h3>Mastering Krea.ai for Stunning Visuals</h3>
+                            <p>Discover the secrets to creating stunning visuals with Krea.ai.</p>
+                        </div>
+                        <div class="blog-card">
+                            <img src="assets/images/blog3.png" alt="Blog 3">
+                            <h3>Video Creation Made Easy with Hailuo.ai</h3>
+                            <p>Step-by-step guide to creating videos using Hailuo.ai.</p>
+                        </div>
+                        <div class="blog-card">
+                            <img src="assets/images/blog3.png" alt="Blog 3">
+                            <h3>Test blog</h3>
+                            <p>Step-by-step guide to creating videos using Hailuo.ai.</p>
+                        </div>
+                        <div class="blog-card">
+                            <img src="assets/images/blog3.png" alt="Blog 3">
+                            <h3>Test blog</h3>
+                            <p>Step-by-step guide to creating videos using Hailuo.ai.</p>
+                        </div>
                     </div>
-                    <div class="blog-post-meta">
-                        By Shubham Saurav | January 27, 2025 
-                    </div>
-
-                    <h2>Why Use AI for Content Creation?</h2>
-                    <p>AI tools like ChatGPT, Krea.ai, and Hailuo.ai make content creation faster, easier, and more efficient. Whether you're a beginner or an experienced creator, AI can help you generate ideas, scripts, images, and even videos.</p>
-
-                    <h2>Step-by-Step Guide to AI Content Creation</h2>
-                    <ol>
-                        <li>Choose a Niche of your liking, you can always do a search on Youtube with this.</li>
-                        <li>Choose a generative AI of your choice it can be ChatGPT, Claude or DeepSeek (Personally not a fan of DeepSeek's narration styles).</li>
-                        <li>If you do not have a topic in mind, just ask AI to generate a random topic list based on the niche you have chosen.</li>
-                        <li>Once you have the topic, just ask AI to generate a script you can use this prompt <code>Generate a script for youtube shorts/instagram reels based on the topic &lt;your_topic_here&gt;</code>.</li>
-                        <li>Once you have the script, you can ask AI to generate images for each scene using this prompt <code>For the script generated above, write prompts for image generation for each scene, make sure the characters are constant in each scene and make sure image generation is &lt;realistic/cartoonish/disney cartoonish&gt;</code>.</li>
-                        <li>Once you have the prompts for Image generation, you can go to <a href="https://www.krea.ai/" target="_blank" rel="noopener noreferrer">Krea.ai</a> website for image generation. You can generate free images as long as you have credits, use tempmailio for temporary mail ids to sign up for infinite credits.</li>
-                        <li>Once you have image generated for each scene, go back to the chat in AI and for each image upload the image to chat and ask to write detailed prompt for video generation <code>With the script above in consideration, this is the image generated for scene&lt;no&gt;. Write a detailed prompt for video generation for this scene.</code>.</li>
-                        <li>Once the prompt is there head over to <a href="https://hailuoai.video/" target="_blank" rel="noopener noreferrer"> Hailuo.ai</a> .Here if you are using free credits generation will be slow (would suggest to buy one month premium). Now go to text to video option and upload image and paste the prompt. It will generate videos.</li>
-                        <li>Once you have video for each scene head over to <a href="https://vidmix.app/" target="_blank" rel="noopener noreferrer">Vidmix</a> Website and upload them there. This tool will not add any watermark to your video. It is completely free. Once you have arranged your videos in order added a sound of your choice, export the video. Make sure you select canvas as 9:16 before export.</li>
-                        <li>Voila you have your video ready with you.</li>
-                    </ol>
-
-                    <h2>FAQs</h2>
-                    <h3>What is the best AI tool for beginners?</h3>
-                    <p>For beginners, ChatGPT and Krea.ai are great tools to start with due to their user-friendly interfaces.</p>
-
-                    <h3>Can I use AI tools for free?</h3>
-                    <p>Yes, many AI tools offer free tiers or credits. For example, Krea.ai allows you to generate images for free as long as you have credits.</p>
                 </div>
-            </article>
-
-            <aside class="sidebar">
-                <!-- <div class="ad-banner side-ad">
-                    Sidebar Ad 1 (300x250)
+                <div class="blog-navigation">
+                    <button class="nav-button" id="prev-button" disabled>Previous</button>
+                    <button class="nav-button" id="next-button">Next</button>
                 </div>
-                <div class="ad-banner side-ad">
-                    Sidebar Ad 2 (300x250)
-                </div> -->
-            </aside>
+            </section>
+
+            <!-- Add the "See All" button section -->
+            <section class="see-all-section">
+                <button class="see-all-button" onclick="window.location.href='all-blogs.html'">See All Blogs</button>
+            </section>
+
+            <!-- Add the signup section -->
+            <section class="signup-section">
+                <h2>Sign Up for More AI Content Creation Tips</h2>
+                <form id="signup-form">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit" id="submit-btn">Submit</button>
+                    <span class="success-tick" id="success-tick">✔</span>
+                </form>
+            </section>
         </div>
     </div>
 
@@ -126,11 +134,8 @@
         <p>© 2025 Desi Catalyst. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        document.querySelector('.navbar-toggle').addEventListener('click', function() {
-            document.querySelector('.navbar-links').classList.toggle('active');
-        });
-    </script>
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1526927408428628"
     crossorigin="anonymous"></script>
 </body>
