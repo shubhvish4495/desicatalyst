@@ -1,9 +1,11 @@
 BINARY_NAME=relay-service
 BUILD_DIR=bin
+GO=$(shell which go || echo 'go')
+DOCKER=$(shell which podman || which docker || echo 'docker')
 
 # Start PostgreSQL container with initialization script
 db-up:
-	docker run --name desicatalyst-info-db -d \
+	$(DOCKER) run --name desicatalyst-info-db -d \
 	  -e POSTGRES_USER=$(DB_USER) \
 	  -e POSTGRES_PASSWORD=$(DB_PASS) \
 	  -e POSTGRES_DB=$(DB_NAME) \
@@ -15,8 +17,8 @@ db-up:
 
 # Stop and remove the database container
 db-down:
-	docker stop desicatalyst-info-db || true
-	docker rm desicatalyst-info-db || true
+	$(DOCKER) stop desicatalyst-info-db || true
+	$(DOCKER) rm desicatalyst-info-db || true
 	#docker volume rm postgres_data || true
 
 # Build the Go application

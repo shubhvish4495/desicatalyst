@@ -5,3 +5,4 @@
 backend/postgres_data
 
 .idea
+backend/bin
