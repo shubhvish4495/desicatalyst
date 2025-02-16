@@ -314,3 +314,13 @@ footer {
 a, u {
     text-decoration: none;
 }
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
