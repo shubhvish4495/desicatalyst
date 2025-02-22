@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "title": "The Art of Writing Clean Codes",
+  "description": "Discover the principles and practices that lead to maintainable, scalable code.",
+  "author": "Sarah Chen",
+  "publishDate": "2024-03-15T08:00:00.000Z",
+  "content": "Clean code is not just about making your code work. It's about making it work elegantly and efficiently.\n\nWhen we write clean code, we're not just writing for the computer to understand - we're writing for other developers (including our future selves) to understand.\n\nHere are some key principles to keep in mind:\n\n1. Keep your functions small and focused\n2. Use meaningful names\n3. Don't repeat yourself (DRY)\n4. Write tests\n5. Refactor regularly",
+  "bannerImage": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+  "extras": {
+    "youtubeVideoLink": "https://www.youtube.com/watch?v=7EmboKQH8lM"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "latest_blog": [
+    "blogs.json"
+  ],
+  "featured_blog": "blogs.json"
+}

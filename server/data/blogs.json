@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "AI Content Creation Guide: Step-by-Step Tutorial for Beginners",
+    "description": "Learn how to create content easily using tools like ChatGPT, Krea.ai and Hailou.ai",
+    "author": "Shubham Saurav",
+    "publishDate": "2025-01-25T08:00:00.000Z",
+    "content": "<h2>Why Use AI for Content Creation?</h2>\n<p>AI tools like ChatGPT, Krea.ai, and Hailuo.ai make content creation faster, easier, and more efficient. Whether you're a beginner or an experienced creator, AI can help you generate ideas, scripts, images, and even videos.</p>\n\n<h2>Step-by-Step Guide to AI Content Creation</h2>\n<ol>\n    <li>Choose a Niche of your liking, you can always do a search on Youtube with this.</li>\n    <li>Choose a generative AI of your choice it can be ChatGPT, Claude or DeepSeek (Personally not a fan of DeepSeek's narration styles).</li>\n    <li>If you do not have a topic in mind, just ask AI to generate a random topic list based on the niche you have chosen.</li>\n    <li>Once you have the topic, just ask AI to generate a script you can use this prompt <code>Generate a script for youtube shorts/instagram reels based on the topic &lt;your_topic_here&gt;</code>.</li>\n    <li>Once you have the script, you can ask AI to generate images for each scene using this prompt <code>For the script generated above, write prompts for image generation for each scene, make sure the characters are constant in each scene and make sure image generation is &lt;realistic/cartoonish/disney cartoonish&gt;</code>.</li>\n    <li>Once you have the prompts for Image generation, you can go to <a href=\"https://www.krea.ai/\" target=\"_blank\" rel=\"noopener noreferrer\">Krea.ai</a> website for image generation. You can generate free images as long as you have credits, use tempmailio for temporary mail ids to sign up for infinite credits.</li>\n    <li>Once you have image generated for each scene, go back to the chat in AI and for each image upload the image to chat and ask to write detailed prompt for video generation <code>With the script above in consideration, this is the image generated for scene&lt;no&gt;. Write a detailed prompt for video generation for this scene.</code>.</li>\n    <li>Once the prompt is there head over to <a href=\"https://hailuoai.video/\" target=\"_blank\" rel=\"noopener noreferrer\"> Hailuo.ai</a> .Here if you are using free credits generation will be slow (would suggest to buy one month premium). Now go to text to video option and upload image and paste the prompt. It will generate videos.</li>\n    <li>Once you have video for each scene head over to <a href=\"https://vidmix.app/\" target=\"_blank\" rel=\"noopener noreferrer\">Vidmix</a> Website and upload them there. This tool will not add any watermark to your video. It is completely free. Once you have arranged your videos in order added a sound of your choice, export the video. Make sure you select canvas as 9:16 before export.</li>\n    <li>Voila you have your video ready with you.</li>\n</ol>\n\n<h2>FAQs</h2>\n<h3>What is the best AI tool for beginners?</h3>\n<p>For beginners, ChatGPT and Krea.ai are great tools to start with due to their user-friendly interfaces.</p>\n\n<h3>Can I use AI tools for free?</h3>\n<p>Yes, many AI tools offer free tiers or credits. For example, Krea.ai allows you to generate images for free as long as you have credits.</p>",
+    "bannerImage": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+    "extras": {
+      "youtubeVideoLink": "https://www.youtube.com/embed/L4-GFRW4gbY?autoplay=1&mute=1"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Mastering InVideo.AI: A Comprehensive Guide to Creating Stunning Videos",
+    "description": "Discover the secrets to creating stunning visuals with Invideo.Ai with minimal effort.",
+    "author": "Shubham Saurav",
+    "publishDate": "2025-02-21T10:30:00.000Z",
+    "content": "<h2>Why Choose InVideo.AI?</h2>\n<p>InVideo.AI is known for its user-friendly interface and robust features, including:</p>\n<ul>\n<li>AI-Powered Text-to-Video</li>\n<li>Ready-to-Use Templates</li>\n<li>Media Library</li>\n<li>Easy Editing Tools</li>\n</ul>\n\n<h2>Getting Started with InVideo.AI</h2>\n<p>Head over to <a href=\"https://invideo.io\">InVideo.AI</a> and create an account. Explore the dashboard and choose a template to get started.</p>\n\n<h2>Creating Your First Video</h2>\n<p>Use the ‘Text-to-Video’ feature to convert scripts into dynamic videos. Customize visuals, add voiceovers, and choose background music from the integrated library.</p>\n\n<h2>Advanced Tips and Tricks</h2>\n<ul>\n<li>Enhance Engagement with Animations</li>\n<li>Leverage Stock Media Wisely</li>\n<li>Optimize for Different Platforms</li>\n</ul>\n\n<h2>Conclusion</h2>\n<p>InVideo.AI empowers you to create professional-quality videos effortlessly. Start creating today at <a href=\"https://invideo.io\">InVideo.AI</a>!</p>",
+    "bannerImage": "https://images.unsplash.com/photo-1542435503-956c469947f6",
+    "extras": {
+      "youtubeVideoLink": "https://www.youtube.com/embed/Wozqj8bai7g?autoplay=1&mute=1"
+    }
+  }
+]

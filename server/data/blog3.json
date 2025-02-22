@@ -1,0 +1,12 @@
+{
+  "id": 3,
+  "title": "The Future of Web Developments",
+  "description": "Exploring emerging trends and technologies shaping the future of web development.",
+  "author": "Emma Thompson",
+  "publishDate": "2024-03-13T14:15:00.000Z",
+  "content": "The web development landscape is constantly evolving. New tools, frameworks, and methodologies emerge regularly, changing how we build for the web.\n\nSome exciting trends to watch:\n\n- Web Assembly\n- Edge Computing\n- AI-powered Development\n- No-code/Low-code Platforms\n- Improved Performance APIs",
+  "bannerImage": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e",
+  "extras": {
+    "youtubeVideoLink": "https://www.youtube.com/watch?v=Wn_Kb3MR_cU"
+  }
+}
