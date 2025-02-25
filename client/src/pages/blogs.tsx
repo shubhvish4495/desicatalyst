@@ -22,7 +22,7 @@ export default function Blogs() {
   const [sortBy, setSortBy] = useState("newest");
 
   const { data: blogs, isLoading } = useQuery<Blog[]>({
-    queryKey: ["/api/blogs"],
+    queryKey: ["/backend/api/blogs"],
   });
 
   const filteredAndSortedBlogs = blogs

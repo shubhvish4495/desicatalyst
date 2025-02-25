@@ -37,11 +37,11 @@ export default function Home() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   const { data: blogs, isLoading } = useQuery<Blog[]>({
-    queryKey: ["/api/blogs"],
+    queryKey: ["/backend/api/blogs"],
   });
 
   const { data: featuredBlog, isLoading: isFeaturedLoading } = useQuery<Blog>({
-    queryKey: ["/api/blogs/featured"],
+    queryKey: ["/backend/api/blogs/featured"],
   });
 
   return (

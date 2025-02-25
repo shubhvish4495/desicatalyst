@@ -26,7 +26,7 @@ export default function Post() {
   const id = params.id ? parseInt(params.id) : null;
 
   const { data: blog, isLoading } = useQuery<Blog>({
-    queryKey: [`/api/blogs/${id}`],
+    queryKey: [`/backend/api/blogs/${id}`],
     enabled: id !== null,
   });
 
