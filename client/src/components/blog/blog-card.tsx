@@ -16,16 +16,16 @@ export function BlogCard({ blog, featured = false }: BlogCardProps) {
   // const avatarUrl = authorAvatars[Math.floor(Math.random() * authorAvatars.length)];
 
   return (
-    <Link href={`/post/${blog.id}`}>
+    <Link href={`/post/${blog.id}`} className="block w-full">
       <Card 
         className={cn(
-          "hover:shadow-lg transition-shadow cursor-pointer",
+          "hover:shadow-lg transition-shadow cursor-pointer flex flex-col max-w-full",
           featured && "md:grid md:grid-cols-2 gap-6"
         )}
       >
         <CardHeader className="p-0">
           <div className={cn(
-            "aspect-video w-full relative overflow-hidden rounded-t-lg",
+            "aspect-video relative overflow-hidden rounded-t-lg",
             featured && "md:rounded-l-lg md:rounded-tr-none md:h-full"
           )}>
             <img
@@ -36,15 +36,15 @@ export function BlogCard({ blog, featured = false }: BlogCardProps) {
           </div>
         </CardHeader>
         <CardContent className={cn(
-          "p-6",
-          featured && "flex flex-col justify-center"
+          "p-6 flex-1 flex flex-col",
+          featured && "md:justify-center"
         )}>
           <div className="flex items-center gap-2 mb-4">
             <Avatar className="h-8 w-8">
               {/* <AvatarImage src={avatarUrl} /> */}
               <AvatarFallback>{blog.author[0]}</AvatarFallback>
             </Avatar>
-            <div className="text-sm text-muted-foreground">
+            <div className="text-sm text-muted-foreground truncate">
               {blog.author} • {formatDistance(new Date(blog.publishDate), new Date(), { addSuffix: true })}
             </div>
           </div>
